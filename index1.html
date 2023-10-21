@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Fitness</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            background: url('img/man-2604149_1920.jpg');
+            margin:0px;
+            padding:0px;
+            color:white;
+        }
+        .left{
+            position:absolute;
+            display:inline-block;
+            left: 10px;
+            top: 10px;
+            /* border:2px solid red; */
+        }
+        .mid{
+            width:600px;
+            margin:10px auto;
+            /* border:2px solid blue; */
+
+        }
+        .right{
+            position:absolute;
+            display:inline-block;
+            right:10px;
+            top:10px;
+            /* border:2px solid green; */
+        }
+        .nav li{
+            display:inline-block;
+            
+
+        }
+        .nav li a{
+            margin:30px;
+            text-decoration: none;
+            color:white;
+        }
+        .nav li a:hover,.nav li a.active{
+            color:rgb(163, 103, 12);
+            text-decoration: underline;
+        }
+        .btn{
+            border:2px solid grey;
+            border-radius: 13px;
+            background-color: rgb(11, 11, 11);
+            color:white;
+            padding: 4px 10px;
+            margin:0px 3px;
+            cursor:pointer;
+        }
+        .btn:hover{
+            background-color: rgb(105, 85, 54);
+        }
+        .left img{
+            width:70px;
+            margin:0px 5px;
+        }
+        .text{
+            margin:0px;
+        }
+        .container{
+            border: 2px solid white;
+            border-radius:20px;
+            display:inline-block;
+            width:400px;
+            margin:200px 150px;
+            padding:50px;
+            padding-top: 20px;
+        }
+        .form input{
+            width:250px;
+            margin:5px 25px;
+            padding:3px;
+            border:2px solid rgb(4, 4, 4);
+            border-radius: 5px;
+            color:rgb(91, 54, 6);
+        }
+        h2{
+            margin:15px 95px;
+        }
+        .form button{
+            width:250px;
+            margin:5px 25px;
+        }
+    </style>
+</head>
+<body>
+    <header class="navbar">
+        <div class="left">
+            <img src="img\bg.1.png" alt="">
+            <p class="text">Gym Fitness</p>
+        </div>
+        <div class="mid">
+            <ul class="nav">
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">About</a></li>
+                <li> <a href="#">Fitness Calculator</a></li>
+                <li> <a href="#">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">Email Us</button>
+            <button class="btn">Follow Us</button>
+        </div>
+
+    </header>
+    <div class="container">
+        <h2>Join Now</h2>
+        <form action="noaction.php">
+            <div class="form">
+                <input type="text" name="myname" placeholder="Enter your name" >
+            </div>
+            <div class="form">
+                <input type="number" age="myage" placeholder="Enter your age">
+            </div>
+            <div class="form">
+                <input type="text" gender="mygender" placeholder="Enter your gender">
+            </div>
+            <div class="form">
+                <input type="email" email="myemail" placeholder="Enter your email">
+            </div>
+            <div class="form">
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+
+
+    </div>
+    
+</body>
+</html>
